@@ -17,6 +17,7 @@ fun EdadCaninaScreen(navController: NavHostController) {
     var resultado by remember { mutableStateOf("") }
     val opciones = listOf("Pequeño", "Mediano", "Grande")
 
+//kevin
     Column {
         TextField(value = edad, onValueChange = { edad = it }, label = { Text("Edad del perro") })
         DropdownMenuBox(opciones, tamaño, { tamaño = it })
